@@ -4,7 +4,6 @@
   text-transform: capitalize;
   font-family: "Poppins", sans-serif;
 }
-
 body {
   width: 100vw;
   height: 100vh;
@@ -22,59 +21,59 @@ body {
   transform: translate(-50%, -50%);
   overflow: hidden;
   background-image: linear-gradient(to top right, #f9a743, #f9db5f);
-}
-.container .ear {
-  position: absolute;
-  top: -110px;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background-color: #243946;
-}
-.container .ear.ear--left {
-  left: -135px;
-}
-.container .ear.ear--right {
-  right: -135px;
-}
-.container .face {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 200px;
-  height: 150px;
-  margin: 80px auto 10px;
-  --rotate-head: 0deg;
-  transform: rotate(var(--rotate-head));
-  transition: transform 0.2s;
-  transform-origin: center 20px;
-}
-.container .face .eye {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background-color: #243946;
-}
-.container .face .eye .glow {
-  position: relative;
-  top: 3px;
-  right: -12px;
-  width: 12px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: #fff;
-  transform: rotate(38deg);
-}
-.container .face .eye.eye--left {
-  margin-right: 40px;
-}
-.container .face .eye.eye--right {
-  margin-left: 40px;
-}
-.container .face .nose {
-  position: relative;
-  transform: scale(1.1);
+  .ear {
+    position: absolute;
+    top: -110px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #243946;
+  }
+  .ear.ear--left {
+    left: -135px;
+  }
+  .ear.ear--right {
+    right: -135px;
+  }
+  .face {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 150px;
+    margin: 80px auto 10px;
+    --rotate-head: 0deg;
+    transform: rotate(var(--rotate-head));
+    transition: transform 0.2s;
+    transform-origin: center 20px;
+    .eye {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background-color: #243946;
+      .glow {
+        position: relative;
+        top: 3px;
+        right: -12px;
+        width: 12px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #fff;
+        transform: rotate(38deg);
+      }
+    }
+    .eye.eye--left {
+      margin-right: 40px;
+    }
+    .eye.eye--right {
+      margin-left: 40px;
+    }
+    .nose {
+      position: relative;
+      transform: scale(1.1);
+    }
+  }
 }
 
 .container .nose .glow {
@@ -86,12 +85,10 @@ body {
   border-radius: 50%;
   background-color: #476375;
 }
-
 .container .mouth {
   position: relative;
   margin-top: 40px;
 }
-
 .container svg.smile {
   position: absolute;
   left: -28px;
@@ -99,7 +96,6 @@ body {
   transform: scaleX(1.1);
   stroke: #243946;
 }
-
 .container .mouth-hole {
   position: absolute;
   top: 0;
@@ -111,7 +107,6 @@ body {
   background-color: #243946;
   z-index: -1;
 }
-
 .container .tongue {
   position: relative;
   top: 5px;
@@ -121,12 +116,10 @@ body {
   transform-origin: top;
   transform: rotateX(60deg);
 }
-
 .container .tongue.breath {
   -webkit-animation: breath 0.3s infinite linear;
   animation: breath 0.3s infinite linear;
 }
-
 .container .tongue-top {
   position: absolute;
   bottom: -15px;
@@ -135,7 +128,6 @@ body {
   border-radius: 15px;
   background-color: #ffd7dd;
 }
-
 .container .line {
   position: absolute;
   top: 0;
@@ -143,7 +135,6 @@ body {
   height: 5px;
   background-color: #fcb7bf;
 }
-
 .container .median {
   position: absolute;
   top: 0;
@@ -154,11 +145,9 @@ body {
   border-radius: 5px;
   background-color: #fcb7bf;
 }
-
 .container .hands {
   position: relative;
 }
-
 .container .hands .hand {
   position: absolute;
   top: -3px;
@@ -166,36 +155,28 @@ body {
   transition: transform 0.5s ease-in-out;
   z-index: 1;
 }
-
 .container .hands .hand--left {
   left: -80px;
 }
-
 .container .hands .hand--left.hide {
   transform: translate(2px, -155px) rotate(-160deg);
 }
-
 .container .hands .hand--left.peek {
   transform: translate(0px, -120px) rotate(-160deg);
 }
-
 .container .hands .hand--right {
   left: 30px;
 }
-
 .container .hands .hand--right.hide {
   transform: translate(-6px, -155px) rotate(160deg);
 }
-
 .container .hands .hand--right.peek {
   transform: translate(-4px, -120px) rotate(160deg);
 }
-
 .container .hands .finger {
   position: relative;
   z-index: 0;
 }
-
 .container .hands .finger .bone {
   width: 20px;
   height: 20px;
@@ -204,7 +185,6 @@ body {
   border-top: none;
   background-color: #fac555;
 }
-
 .container .hands .finger .nail {
   position: absolute;
   left: 0;
@@ -216,45 +196,37 @@ body {
   background-color: #fac555;
   z-index: -1;
 }
-
 .container .hands .finger:nth-child(1),
 .container .hands .finger:nth-child(3) {
   left: 4px;
   z-index: 1;
 }
-
 .container .hands .finger:nth-child(1) .bone,
 .container .hands .finger:nth-child(3) .bone {
   height: 10px;
 }
-
 .container .hands .finger:nth-child(3) {
   left: -4px;
 }
-
 .container .hands .finger:nth-child(2) {
   top: -5px;
   z-index: 2;
 }
-
 .container .hands .finger:nth-child(1) .nail,
 .container .hands .finger:nth-child(3) .nail {
   top: 0px;
 }
-
 .container .tengah {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-
 .container .login {
   position: relative;
   display: flex;
   flex-direction: column;
 }
-
 .container .login label {
   position: relative;
   /* padding: 0 20px; */
@@ -274,7 +246,6 @@ body {
   border-radius: 10px;
   margin: 1px;
 }
-
 .container .login label .fas {
   position: absolute;
   top: 32%;
@@ -282,12 +253,10 @@ body {
   /* color: #bbb; */
   font-size: 1.2rem;
 }
-
 .container .login label .fas:before {
   position: relative;
   left: 1px;
 }
-
 .container .login input,
 .container .login .login-button {
   /* width: 100%; */
@@ -296,7 +265,6 @@ body {
   border-radius: 10px;
   font-size: 1rem;
 }
-
 /* .container .fa-user {
   font-size: 1.3rem;
 } */
@@ -306,23 +274,18 @@ body {
   box-shadow: none;
   outline: none;
 }
-
 .container .login input::-moz-placeholder {
   color: #ccc;
 }
-
 .container .login input:-ms-input-placeholder {
   color: #ccc;
 }
-
 .container .login input::placeholder {
   color: #ccc;
 }
-
 .container .login input.password {
   padding: 0 90px 0 40px;
 }
-
 .container .login .password-button {
   position: absolute;
   top: 15px;
@@ -338,11 +301,9 @@ body {
   background-color: #243946;
   color: #fff;
 }
-
 .container .login .password-button:active {
   transform: scale(0.95);
 }
-
 .container .login .login-button {
   width: 100%;
   margin: 20px 0px 0px;
@@ -352,11 +313,9 @@ body {
   color: #fff;
   transition: transform 0.1s;
 }
-
 .container .login .login-button:active {
   transform: scale(0.95);
 }
-
 .container .login .login-button:hover {
   background-color: #495e6b;
 }
@@ -367,19 +326,19 @@ body {
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
 }
-
 .container .footer .footer-a {
   color: #243946;
   text-decoration: none;
+
   transition: all 0.2s ease-in-out 0.1s;
 }
-
 .container .footer .footer-a:hover {
   color: #fff;
 }
 
 @-webkit-keyframes breath {
-  0%, 100% {
+  0%,
+  100% {
     transform: rotateX(0deg);
   }
   50% {
@@ -387,10 +346,11 @@ body {
   }
 }
 @keyframes breath {
-  0%, 100% {
+  0%,
+  100% {
     transform: rotateX(0deg);
   }
   50% {
     transform: rotateX(60deg);
   }
-}/*# sourceMappingURL=style.css.map */
+}
